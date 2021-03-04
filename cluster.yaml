@@ -5,7 +5,7 @@ metadata:
   region: us-east-2
 nodeGroups:
   - name: worker-group
-    instanceType: t2.micro
-    desiredCapacity: 3
-    minSize: 3
-    maxSize: 5
+    instanceType: t2.medium
+    desiredCapacity: 1
+    minSize: 1
+    maxSize: 3
