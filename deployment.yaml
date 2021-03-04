@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: flask-app
 spec:
   selector:
     matchLabels:
-      name: hello-world
+      name: flask-app
   template:
     metadata:
       labels:
-        name: hello-world
+        name: flask-app
     spec:
       containers:
         - name: app
-          image: paulbouwer/hello-kubernetes:1.8
+          image: jasonautomation/case_study_part1
           ports:
             - containerPort: 8080
